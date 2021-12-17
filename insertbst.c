@@ -54,8 +54,9 @@ int main()
     insert(root, 10); 
     insert(root, 30); 
     insert(root, 40); 
+    insert(root, 35);
    
-    // in chuong trinh duyet 
+    printf("Cây nhị phân là:");
     inorder(root); 
    
     return 0; 
