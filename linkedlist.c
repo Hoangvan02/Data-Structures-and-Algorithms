@@ -85,14 +85,13 @@ node DelTail(node head){
     while(p->next->next != NULL){
         p = p->next;
     }
-    p->next = p->next->next; // Cho next bằng NULL
-    // Hoặc viết p->next = NULL cũng được
+    p->next = p->next->next; 
     return head;
 }
 //Xoa node o vi tri bat ki
 node DelAt(node head, int position){
     if(position == 0 || head == NULL || head->next == NULL){
-        head = DelHead(head); // Nếu vị trí chèn là 0, tức là thêm vào đầu
+        head = DelHead(head);
     }else{
         int k = 1;
         node p = head;
