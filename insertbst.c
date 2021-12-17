@@ -47,13 +47,13 @@ int main()
 { 
     
     struct node *root = NULL; 
-    root = insert(root, 50); 
+    root = insert(root, 100); 
+    roinsert(root, 20); 
+    insert(root, 10); 
+    insert(root, 500); 
+    insert(root, 10); 
     insert(root, 30); 
-    insert(root, 20); 
     insert(root, 40); 
-    insert(root, 70); 
-    insert(root, 60); 
-    insert(root, 80); 
    
     // in chuong trinh duyet 
     inorder(root); 
