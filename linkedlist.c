@@ -166,4 +166,22 @@ int main(){
     printf("\nThem phan tu 9 vao vi tri 2 linked list");
     head = AddAt(head, 9, 2);
     Traverser(head);
-                                                           
+                               
+    printf("\nXoa 1 phan dau linked list");
+    head =DelHead(head);
+    Traverser(head);
+
+    printf("\nXoa 1 phan tu bat ki khoi linked list");
+    head = DelAt(head, 1);
+    Traverser(head);
+
+    printf("\nXoa 1 phan tu cuoi linked list");
+    head = DelTail(head);
+    Traverser(head);
+
+    printf("\nTim kiem phan tu có giá trị là 5 trong linked list");
+    int index = Search(head, 5);
+    if(index == -1) printf("\nKhông có phần tử đó!");
+    else printf("\nVi tri cua phan tu do la%d", index + 1);
+}
+     
