@@ -25,7 +25,7 @@ void print(int arr[], int leng) {
 }
 
 int main() {
-  int arr[] = {9, 6, 5, 8, 4, 1};
+  int arr[] = {9, 4, 7, 11, 6};
   int size = sizeof(arr) / sizeof(arr[0]);
   sort(arr, size);
   printf("Mảng sau khi được sắp xếp:\n");
